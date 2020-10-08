@@ -9,83 +9,23 @@
   </head>
   <body>
     <header>
-      <!-- ricorda inserireinserire logo -->
+      <!-- ricorda logo -->
     </header>
-    <!-- prova collegamento db -->
     <main>
       <div class="row">
+        <?php foreach ($database as $disc): ?>
         <div class="disc">
-          <div class="poster">
-            <img src="https://images-na.ssl-images-amazon.com/images/I/81MDAIdh78L._SY355_.jpg" alt="">
-          </div>
-          <div class="title">
-            <h2>New Jersey</h2>
-          </div>
-          <div class="artist">
-            <p>Bon Jovi <br> 1988</p>
-          </div>
+            <div class="poster">
+              <img src="<?php echo $disc["poster"]; ?>" alt="poster">
+            </div>
+            <div class="title">
+              <h2> <?php echo $disc["title"]; ?></h2>
+            </div>
+            <div class="artist">
+              <p> <?php echo $disc["author"]; ?> <br> <?php echo $disc["year"]; ?></p>
+            </div>
         </div>
-
-        <div class="disc">
-          <div class="poster">
-            <img src="https://images-na.ssl-images-amazon.com/images/I/71g40mlbinL._SX355_.jpg" alt="">
-          </div>
-          <div class="title">
-            <h2>Live at Wembley 86</h2>
-          </div>
-          <div class="artist">
-            <p>Queen <br> 1992</p>
-          </div>
-        </div>
-
-        <div class="disc">
-          <div class="poster">
-            <img src="https://images-na.ssl-images-amazon.com/images/I/411BQR6BHRL.jpg" alt="">
-          </div>
-          <div class="title">
-            <h2>Ten's Summoner's Tales</h2>
-          </div>
-          <div class="artist">
-            <p>Sting <br> 1993</p>
-          </div>
-        </div>
-
-        <div class="disc">
-          <div class="poster">
-            <img src="https://m.media-amazon.com/images/I/81UtLzBDoEL._SS500_.jpg" alt="">
-          </div>
-          <div class="title">
-            <h2>Steve Gadd band</h2>
-          </div>
-          <div class="artist">
-            <p>Steve Gadd band <br> 2018</p>
-          </div>
-        </div>
-
-        <div class="disc">
-          <div class="poster">
-            <img src="https://i.ebayimg.com/images/g/1GwAAOSwFytaKr7l/s-l300.jpg" alt="">
-          </div>
-          <div class="title">
-            <h2>Brave new World</h2>
-          </div>
-          <div class="artist">
-            <p>Iron Maiden <br> 2000</p>
-          </div>
-        </div>
-
-        <div class="disc">
-          <div class="poster">
-            <img src="https://images-na.ssl-images-amazon.com/images/I/81MDAIdh78L._SY355_.jpg" alt="">
-          </div>
-          <div class="title">
-            <h2>One more car, one more rider</h2>
-          </div>
-          <div class="artist">
-            <p>Eric Clapton <br> 2002</p>
-          </div>
-        </div>
-
+      <?php endforeach ?>
       </div>
     </main>
   </body>
