@@ -30,3 +30,16 @@
     </main>
   </body>
 </html>
+
+<!-- template -->
+   <script id="entry-template" type="text/x-handlebars-template">
+       <div class="entry">
+         <h1>{{title}}</h1>
+         <div class="body">
+           {{body}}
+         </div>
+       </div>
+   </script>
+   <script src="dist/app.js" charset="utf-8"></script>
+ </body>
+</html>
